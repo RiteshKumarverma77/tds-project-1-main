@@ -1,12 +1,26 @@
-you can run like this ..
+---
+title: Tds Project 1 Main
+emoji: 📚
+colorFrom: red
+colorTo: indigo
+sdk: docker
+pinned: false
+---
 
-1 - make a virtual env first
+This is a FastAPI-based automation service that receives task briefs, generates apps using LLMs, creates GitHub repositories, and pings evaluation servers.
 
-2 - install all requirements 
+### How to run locally
 
-3 - run the below command 
+```bash
+# 1. Create virtual environment
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
 
+# 2. Install dependencies
+pip install -r requirements.txt
 
+# 3. Run server
 uvicorn app.main:app --reload
+```
 
 
